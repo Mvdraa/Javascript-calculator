@@ -1,0 +1,70 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(to right bottom, #172437, #16233c, #172140, #1b1e44, #221a46);
+}
+
+#calc-wrapper {
+  width: max-content;
+  margin: auto;
+
+}
+
+#display-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+#buttons {
+  margin-top: 5px;
+}
+
+#numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 145px;
+  grid-gap: 15px;
+}
+
+.numberButton,
+.operatorButton {
+  padding: 30px;
+  font-size: 15px;
+  color: white;
+
+
+  background: rgba(130, 134, 168, 0.28);
+  border: none;
+
+}
+
+.numberButton:hover,
+.operatorButton:hover {
+  background: rgba(42, 50, 113, .56)
+}
+
+
+#display {
+  color: rgb(201, 32, 32);
+  font-size: 30px;
+  width: 8.5em;
+  height: 50px;
+  text-align: right;
+}
+
+#result {
+  padding: 15px 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h1 {
+  text-align: center;
+  color: aqua;
+  font-weight: bold;
+  padding: 20px;
+  margin-bottom: 50px;
+}
